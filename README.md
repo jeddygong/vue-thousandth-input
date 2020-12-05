@@ -1,29 +1,17 @@
 # vue-thousandth-input
+vue-thousandth-input component for Vue.js / 基于vue的一个千分位输入表单组件
 
-## Project setup
-```
-npm install
-```
+## Installation
 
-### Compiles and hot-reloads for development
 ```
-npm run serve
-```
+npm i vue-thousandth-input
 
-### Compiles and minifies for production
-```
-npm run build
+or
+
+yarn add vue-thousandth-input
 ```
 
-### Run your tests
-```
-npm run test
-```
+## How to use?
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# vue-thousandth-input
