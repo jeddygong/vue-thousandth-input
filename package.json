@@ -10,6 +10,20 @@
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib --name vue-thousandth-input ./index.js"
   },
+  "repository": {
+	"type": "git",
+	"url": "git+https://github.com/Jeddy-2020/vue-thousandth-input.git"
+  },
+  "keywords": [
+	"vue",
+	"thousandth"
+  ],
+  "author": "Jeddy",
+  "license": "ISC",
+  "bugs": {
+	"url": "https://github.com/Jeddy-2020/vue-thousandth-input/issues"
+  },
+  "homepage": "https://github.com/Jeddy-2020/vue-thousandth-input#readme",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
