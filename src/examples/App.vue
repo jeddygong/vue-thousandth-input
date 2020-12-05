@@ -1,17 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <thousandth
+      styleSet="border: 2px solid red;"
+      :radixPoint="0"
+      v-model="value"
+    />
+
+    <h5><br>Value is: {{ value }}</h5>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import thousandth from './../components/thousandth.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    thousandth
+  },
+  data () {
+    return {
+      value: ''
+    }
   }
 }
 </script>
