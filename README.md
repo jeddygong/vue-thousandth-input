@@ -1,4 +1,5 @@
 # vue-thousandth-input
+
 vue-thousandth-input component for Vue.js / 基于vue的一个千分位输入表单组件
 
 <p align="center">
@@ -8,14 +9,20 @@ vue-thousandth-input component for Vue.js / 基于vue的一个千分位输入表
 ## Installation / 下载
 
 ### npm
+
 ```
 npm install vue-thousandth-input
+
 ```
+
 ### yarn
+
 ```
 yarn add vue-thousandth-input
 ```
+
 ### Register the plugin as a global component / 全局注册组件
+
 ```
 import Vue from 'vue'
 import VuethousandthInput from 'vue-thousandth-input'
@@ -27,7 +34,7 @@ Vue.use(VuethousandthInput)
 
 ```
 <template>
-	<vue-thousandth-input v-model="value"></vue-thousandth-input>
+ <vue-thousandth-input v-model="value"></vue-thousandth-input>
 </template>
 
 <script>
@@ -39,9 +46,9 @@ Vue.use(VuethousandthInput)
       VueThousandthInput
     },
     data () {
-    	return {
-    		value
-    	}
+     return {
+      value
+     }
     }
   };
 </script>
@@ -54,7 +61,7 @@ Vue.use(VuethousandthInput)
 <script src="https://unpkg.com/vue-thousandth-input"></script>
 ```
 
-### Then you need to register it:
+### Then you need to register it
 
 ```
 Vue.component('vue-thousandth-input')
@@ -71,6 +78,7 @@ Vue.component('vue-thousandth-input')
 | `placeholder` | `String` | `''` | placeholder for the input |
 
 ### event / 事件
+
 | Event | Arguments | Description |
 | ----- | --------- | ----------- |
 | `change` | `Object` | Fires when the input changes with the argument is the object includes `{ event, changeValue, value }`  / 输入事件返回的值 |
