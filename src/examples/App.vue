@@ -1,8 +1,6 @@
 <template>
   <div id="app">
     <thousandth
-      styleSet="border: 2px solid red;"
-      :radixPoint="0"
       v-model="value"
     />
 

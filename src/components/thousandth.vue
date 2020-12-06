@@ -4,6 +4,7 @@
     v-model="thousandValue"
     :placeholder="placeholder"
     :style="styleSet"
+    :class="classSet"
     @input="onInputEnter"
   />
 </template>

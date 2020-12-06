@@ -1,6 +1,10 @@
 # vue-thousandth-input
 vue-thousandth-input component for Vue.js / 基于vue的一个千分位输入表单组件
 
+<p align="center">
+  <img src="demo.gif" width="100%" alt="Logo"/>
+</p>
+
 ## Installation / 下载
 
 ### npm
@@ -23,10 +27,10 @@ Vue.use(VuethousandthInput)
 
 ```
 <template>
-    <vue-thousandth-input v-model="value"></vue-thousandth-input>
-  </template>
+	<vue-thousandth-input v-model="value"></vue-thousandth-input>
+</template>
 
-  <script>
+<script>
   import { VueThousandthInput } from 'vue-thousandth-input';
 
   export default {
@@ -40,7 +44,7 @@ Vue.use(VuethousandthInput)
     	}
     }
   };
-  </script>
+</script>
 ```
 
 ### CDN
@@ -61,12 +65,12 @@ Vue.component('vue-thousandth-input')
 | Property | Type | Default value | Description |
 | -------- | ---- | ------------- | ----------- |
 | `value` | `String`|`Number` | v-model Default value / v-model默认值 |
-| `decimalPoint` | `Number` | 3 | Keep a few decimal places / 保留几位小数点 |
+| `decimalPoint` | `Number` |  | Keep a few decimal places / 保留几位小数点 |
 | `class-set` | `String` | `''` | Add class / 添加自定义class |
 | `style-set` | `String` | `''` | Add style / 添加自定义style |
 | `placeholder` | `String` | `''` | placeholder for the input |
 
 ### event / 事件
 | Event | Arguments | Description |
-| ----- | --------- | ----------- | ----- |
+| ----- | --------- | ----------- |
 | `change` | `Object` | Fires when the input changes with the argument is the object includes `{ event, changeValue, value }`  / 输入事件返回的值 |
