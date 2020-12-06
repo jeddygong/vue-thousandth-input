@@ -68,5 +68,5 @@ Vue.component('vue-thousandth-input')
 
 ### event / 事件
 | Event | Arguments | Description |
-| ----- | --------- | ----------- | ----- |
+| ----- | --------- | ----------- |
 | `change` | `Object` | Fires when the input changes with the argument is the object includes `{ event, changeValue, value }`  / 输入事件返回的值 |
