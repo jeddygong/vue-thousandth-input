@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'vue-thousandth-pinput',
+  name: 'vue-thousandth-input',
   data(){
     return {
       thousandValue: ''
@@ -20,7 +20,7 @@ export default {
     value: {  // 默認表單值，v-model值
         default: ''
     },
-    radixPoint: { // 保留几位小数点，默认3位，为0的时候不显示小数点
+    decimalPoint: { // 保留几位小数点，默认3位，为0的时候不显示小数点
       type: Number,
       default: 3
     },
@@ -28,7 +28,7 @@ export default {
     'class-set': String, // 给当前输入框添加class
     placeholder: { // 自定义当前输入框的提示語
         type: String,
-        default: 'Default Placeholder'
+        default: ''
     }
 },
 
@@ -42,8 +42,6 @@ methods: {
     */
     onInputEnter: function (e) {
 
-        // let nowthouVal = this.thousandValue;
-        console.log(e.target.value,'value');
         // 如果直接输入的是.
         if(e.target.value === '.') {
           this.thousandValue = '0.'
@@ -52,7 +50,7 @@ methods: {
           this.thousandValue = ''
         }
         // 验证金额输入只能为数字,以及一位小数点
-        if(this.radixPoint !== 0) {
+        if(this.decimalPoint !== 0) {
             this.thousandValue = this.thousandValue.replace(/[^\d.]/g,'');
 
         // 验证金额输入只能为正数
@@ -69,8 +67,8 @@ methods: {
         // 监听返回的数据
         this.$emit('change', {
             event: e, // 返回的当前event
-            value: returnNum, // 返回的当前转换后的value
-            trueValue: nowVal // 返回没有转化后的value
+            changeValue: returnNum, // 返回的当前转换后的value
+            value: nowVal // 返回没有转化后的value
         });
 
         // 绑定v-model
@@ -86,8 +84,8 @@ methods: {
         let num1 = pointStr[0];
         let num2 = pointStr[1];
         // 保留几位小数
-        if (this.radixPoint && num2 && num2.length > this.radixPoint) {
-            let nowDec = Number(0 + '.' + num2).toFixed(this.radixPoint);
+        if (this.decimalPoint && num2 && num2.length > this.decimalPoint) {
+            let nowDec = Number(0 + '.' + num2).toFixed(this.decimalPoint);
             num2 = nowDec.split('.')[1];
             return `${num1}.${num2}`;
 
