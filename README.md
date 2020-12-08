@@ -80,7 +80,7 @@ Vue.component('vue-thousandth-input')
 | -------- | ---- | ------------- | ----------- |
 | `value` | `String`|`Number` | v-model Default value / v-model默认值 |
 | `decimalPoint` | `Number` |  | Keep a few decimal places / 保留几位小数点 |
-| `id-set` | `String` | `''` | Add id / 添加自定义id |
+| `id-set` | `String` | `''` | Add id / 添加自定义id / Available from v0.1.2 |
 | `class-set` | `String` | `''` | Add class / 添加自定义class |
 | `style-set` | `String` | `''` | Add style / 添加自定义style |
 | `placeholder` | `String` | `''` | placeholder for the input |
@@ -88,7 +88,7 @@ Vue.component('vue-thousandth-input')
 ### event / 事件
 
 | Event | Arguments | Description | Notes |
-| ----- | --------- | ----------- |
+| ----- | --------- | ----------- | ----- |
 | `change` | `Object` | Fires when the input changes with the argument is the object includes `{ event, changeValue, value }`  / 输入事件返回的值 | onInput |
-| `focus` | `Object` | Fires when the focus with the argument is the object includes `{ event, changeValue, value }`  / 获取焦点事件返回的值 | Available from v0.1.2 / v0.1.2版本支持 |
-| `blur` | `Object` | Fires when the blur with the argument is the object includes `{ event, changeValue, value }`  / 失去焦点返回的值 | Available from v0.1.2 / v0.1.2版本支持 |
+| `focus` | `Object` | Fires when the focus with the argument is the object includes `{ event, changeValue, value }`  / 获取焦点事件返回的值 | onFocus Available from v0.1.2 / v0.1.2版本支持 |
+| `blur` | `Object` | Fires when the blur with the argument is the object includes `{ event, changeValue, value }`  / 失去焦点返回的值 | onBlur Available from v0.1.2 / v0.1.2版本支持 |
