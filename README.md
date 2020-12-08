@@ -20,7 +20,7 @@ npm install vue-thousandth-input
 yarn add vue-thousandth-input
 ```
 
-### Register the plugin as a global component / 全局注册组件
+### Example 1: Register the plugin as a global component / 全局注册组件
 
 ```
 import Vue from 'vue'
@@ -37,7 +37,7 @@ Vue.use(VuethousandthInput)
 </template>
 ```
 
-### Add a component / 局部注册组件
+### Example 2: Add a component / 局部注册组件
 
 ```
 <template>
