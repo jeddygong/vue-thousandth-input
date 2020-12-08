@@ -78,7 +78,8 @@ Vue.component('vue-thousandth-input')
 
 | Property | Type | Default value | Description |
 | -------- | ---- | ------------- | ----------- |
-| `value` | `String`|`''`  | v-model Default value / v-model默认值 |
+| `value` | `String`|`''`  | Default value / 默认值 |
+| `v-model` | `String`|`value`  | v-model Default value / v-model默认值 |
 | `decimalPoint` | `Number` |  | Keep a few decimal places / 保留几位小数点 |
 | `id-set` | `String` | `''` | Add id / 添加自定义id / Available from v0.1.2 |
 | `class-set` | `String` | `''` | Add class / 添加自定义class |
