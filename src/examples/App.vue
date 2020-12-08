@@ -2,6 +2,11 @@
   <div id="app">
     <thousandth
       v-model="value"
+			@change="change"
+			@blur="blur"
+			@focus="focus"
+			:decimalPoint="3"
+			id-set="woshi"
     />
 
     <h5><br>Value is: {{ value }}</h5>
@@ -20,7 +25,18 @@ export default {
     return {
       value: ''
     }
-  }
+	},
+	methods: {
+		change (obj) {
+			console.log(obj, 'change');
+		},
+		blur (obj) {
+			console.log(obj,'blur');
+		},
+		focus (obj) {
+			console.log(obj,'focus');
+		}
+	}
 }
 </script>
 

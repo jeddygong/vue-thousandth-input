@@ -1,6 +1,6 @@
 {
   "name": "vue-thousandth-input",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "private": false,
   "description": "vue-thousandth-input component for Vue.js / 基于vue的一个千分位输入表单组件",
   "main": "dist/vue-thousandth-input.umd.min.js",
