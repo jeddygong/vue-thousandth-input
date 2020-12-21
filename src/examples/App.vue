@@ -5,11 +5,14 @@
 			@change="change"
 			@blur="blur"
 			@focus="focus"
+            @change_="change_"
 			:decimalPoint="3"
 			id-set="woshi"
     />
 
     <h5><br>Value is: {{ value }}</h5>
+
+    <input v-model="value"/>
   </div>
 </template>
 
@@ -27,6 +30,9 @@ export default {
     }
 	},
 	methods: {
+        change_(){
+            console.log('change_====',this.value)
+        },
 		change (obj) {
 			console.log(obj, 'change');
 		},

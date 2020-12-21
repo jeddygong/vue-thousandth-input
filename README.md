@@ -93,3 +93,4 @@ Vue.component('vue-thousandth-input')
 | `change` | `Object` | Fires when the input changes with the argument is the object includes `{ event, changeValue, value }`  / 输入事件返回的值 | onInput |
 | `focus` | `Object` | Fires when the focus with the argument is the object includes `{ event, changeValue, value }`  / 获取焦点事件返回的值 | onFocus Available from v0.1.2 / v0.1.2版本支持 |
 | `blur` | `Object` | Fires when the blur with the argument is the object includes `{ event, changeValue, value }`  / 失去焦点返回的值 | onBlur Available from v0.1.2 / v0.1.2版本支持 |
+| `change_` | 无 | 无  / 失去焦点更改值 | onBlur Available from v0.1.3 / v0.1.3版本支持 |
