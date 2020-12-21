@@ -9,6 +9,8 @@
     @input="onInputEnter"
 		@blur="onBlur"
 		@focus="onFocus"
+        @change="onInputChange"
+
   />
 </template>
 
@@ -39,8 +41,19 @@ export default {
 created () {
     this.value && (this.thousandValue = this.comdify(this.value));
 },
+    watch: {
+        value(){
+            this.value && (this.thousandValue = this.comdify(this.value));
+        }
+    },
 
 methods: {
+    /**
+     * 数值改变
+     **/
+    onInputChange(){
+        this.$emit('change_');
+    },
     /**
      * 输入框的输入事件
     */
